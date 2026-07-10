@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tokisaki Kurumi Fan Website</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Loading -->
+
+<div id="loading">
+
+<h1>Tokisaki Kurumi</h1>
+
+<p>Nightmare Spirit</p>
+
+</div>
+
+<!-- Background -->
+
+<div class="background"></div>
+
+<!-- Navbar -->
+
+<nav>
+
+<div class="logo">
+
+🕒 Kurumi
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#bio">Biodata</a></li>
+
+<li><a href="#gallery">Galeri</a></li>
+
+<li><a href="#music">Music</a></li>
+
+<li><a href="#chat">Bot</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section id="home" class="hero">
+
+<div class="clock-bg"></div>
+
+<img src="kurumi.jpg" id="kurumi" alt="Tokisaki Kurumi">
+
+<h1>Tokisaki Kurumi</h1>
+
+<h3>Nightmare • Spirit Ketiga</h3>
+
+<p>
+
+"Time belongs only to those who can control it."
+
+</p>
+
+<div class="hero-btn">
+
+<button onclick="nightmare()">
+
+🔫 Nightmare Mode
+
+</button>
+
+<button onclick="toggleMusic()">
+
+🎵 Music
+
+</button>
+
+</div>
+
+</section><!-- ========================= -->
+<!-- BIODATA -->
+<!-- ========================= -->
+
+<section id="bio" class="container">
+
+<h2>📖 Biodata</h2>
+
+<div class="bio-card">
+
+<div class="bio-item">
+<h3>Nama</h3>
+<p>Tokisaki Kurumi</p>
+</div>
+
+<div class="bio-item">
+<h3>Anime</h3>
+<p>Date A Live</p>
+</div>
+
+<div class="bio-item">
+<h3>Julukan</h3>
+<p>Nightmare</p>
+</div>
+
+<div class="bio-item">
+<h3>Spirit</h3>
+<p>Spirit Ketiga</p>
+</div>
+
+<div class="bio-item">
+<h3>Malaikat</h3>
+<p>Zafkiel</p>
+</div>
+
+<div class="bio-item">
+<h3>Senjata</h3>
+<p>Pistol & Musket</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STORY -->
+<!-- ========================= -->
+
+<section class="container">
+
+<h2>📜 Story</h2>
+
+<div class="story">
+
+<p>
+
+Tokisaki Kurumi adalah salah satu Spirit paling terkenal
+dalam anime <b>Date A Live</b>.
+Ia dikenal sebagai "Nightmare"
+karena kekuatannya yang mampu mengendalikan waktu.
+
+</p>
+
+<p>
+
+Dengan malaikat bernama <b>Zafkiel</b>,
+Kurumi dapat menggunakan berbagai kemampuan
+melalui peluru-peluru waktu yang memiliki efek berbeda.
+
+</p>
+
+<p>
+
+Walaupun terlihat kejam,
+ia sebenarnya memiliki tujuan untuk mengubah masa depan
+dan menghentikan tragedi yang pernah terjadi.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STATUS -->
+<!-- ========================= -->
+
+<section class="container">
+
+<h2>📊 Status</h2>
+
+<div class="status">
+
+<div>
+
+<p>Power</p>
+
+<div class="bar">
+
+<span style="width:95%"></span>
+
+</div>
+
+</div>
+
+<div>
+
+<p>Speed</p>
+
+<div class="bar">
+
+<span style="width:90%"></span>
+
+</div>
+
+</div>
+
+<div>
+
+<p>Intelligence</p>
+
+<div class="bar">
+
+<span style="width:98%"></span>
+
+</div>
+
+</div>
+
+<div>
+
+<p>Time Control</p>
+
+<div class="bar">
+
+<span style="width:100%"></span>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- ========================= -->
+<!-- GALERI -->
+<!-- ========================= -->
+
+<section id="gallery" class="container">
+
+<h2>🖼️ Galeri Kurumi</h2>
+
+<p>Klik gambar untuk memperbesar.</p>
+
+<div class="gallery">
+
+<img src="kurumi.jpg" onclick="buka(this)" alt="Kurumi">
+
+<img src="kurumi2.jpg" onclick="buka(this)" alt="Kurumi">
+
+<img src="kurumi3.jpg" onclick="buka(this)" alt="Kurumi">
+
+<img src="kurumi4.jpg" onclick="buka(this)" alt="Kurumi">
+
+<img src="kurumi5.jpg" onclick="buka(this)" alt="Kurumi">
+
+<img src="kurumi6.jpg" onclick="buka(this)" alt="Kurumi">
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LIGHTBOX -->
+<!-- ========================= -->
+
+<div id="lightbox">
+
+<span class="close" onclick="tutup()">&times;</span>
+
+<img id="gambarBesar" src="" alt="Kurumi">
+
+</div>
+
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
+<section id="music" class="container">
+
+<h2>🎵 Music Playlist</h2>
+
+<select id="playlist" onchange="gantiLagu()">
+
+<option value="music1.mp3">Opening Date A Live</option>
+
+<option value="music2.mp3">Kurumi Theme</option>
+
+<option value="music3.mp3">Instrumental</option>
+
+<option value="music4.mp3">Ending Theme</option>
+
+</select>
+
+<br><br>
+
+<audio id="bgm" controls loop>
+
+<source src="music1.mp3" type="audio/mpeg">
+
+</audio>
+
+</section>
+
+<!-- ========================= -->
+<!-- QUOTE -->
+<!-- ========================= -->
+
+<section class="container">
+
+<h2>💬 Quote</h2>
+
+<div class="quote">
+
+<p>
+
+"Time belongs only to those who can control it."
+
+</p>
+
+<h4>— Tokisaki Kurumi</h4>
+
+</div>
+
+</section><!-- ========================= -->
+<!-- BOT KURUMI -->
+<!-- ========================= -->
+
+<section id="chat" class="container">
+
+<h2>🤖 Kurumi Bot</h2>
+
+<div id="chatBot">
+
+<div id="chatHeader">
+
+🕒 Tokisaki Kurumi
+
+</div>
+
+<div id="chatBody">
+
+<div class="bot">
+
+<b>Kurumi</b><br>
+
+Ara ara... Selamat datang.
+Ada yang ingin kamu tanyakan?
+
+</div>
+
+</div>
+
+<div id="chatInput">
+
+<input
+type="text"
+id="userInput"
+placeholder="Tulis pesan..."
+>
+
+<button onclick="kirim()">
+
+Kirim
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact" class="container">
+
+<h2>📞 Contact</h2>
+
+<div class="contact-card">
+
+<p><b>Website:</b> Kurumi Fan Website</p>
+
+<p><b>Anime:</b> Date A Live</p>
+
+<p><b>Character:</b> Tokisaki Kurumi</p>
+
+<p><b>Dibuat dengan:</b> HTML, CSS & JavaScript</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+<h2>Tokisaki Kurumi Fan Website</h2>
+
+<p>
+
+Made with ❤️ using HTML, CSS & JavaScript
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ========================= -->
+<!-- WEBSITE EFFECT -->
+<!-- ========================= -->
+
+<div id="flash"></div>
+
+<div id="bullet"></div>
+
+<button id="topBtn" onclick="topFunction()">
+
+⬆
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
